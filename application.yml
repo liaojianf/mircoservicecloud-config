@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev    #开发环境
   application:
-    name: mircoservicecloud-config-atguigu-dev
+    name: mircoservicecloud-config-atguigu-devsdfsdf
  
 eureka:
    client:
