@@ -7,6 +7,10 @@ spring:
   profiles: dev    #开发环境
   application:
     name: mircoservicecloud-config-atguigu-dev
+  eureka:
+   client:
+      service-url:
+         defaultZone: http:/eureka-test.com:7001/eureka/
 ---
 spring:
   profiles: test   #测试环境
