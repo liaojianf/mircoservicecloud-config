@@ -1,10 +1,11 @@
 spring:
-   profiles:
-   active:
-   - dev
- ---
+  profiles:
+    active: 
+      - dev
+---
 server:
   port: 8001
+  
 spring:
   profiles: dev
   application:
@@ -40,7 +41,7 @@ info:
   company.name: www.atguigu.com
   build.artifactId: ${project.artifactId}
   build.version: ${project.version}
- ---
+---
 server:
   port: 8001
 spring:
