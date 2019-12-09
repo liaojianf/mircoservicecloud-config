@@ -26,7 +26,7 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: microservicecloud-dept8001 #修改Status名称
+    instance-id: dept-8001.com #修改Status名称
     prefer-ip-address: true     #访问路径可以显示IP地址
 
 mybatis:
@@ -64,7 +64,7 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: microservicecloud-dept8001 #修改Status名称
+    instance-id: dept-8001.com  #修改Status名称
     prefer-ip-address: true     #访问路径可以显示IP地址
 
 mybatis:
