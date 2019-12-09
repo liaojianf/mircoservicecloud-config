@@ -7,7 +7,7 @@ spring:
    port: 7001 #注册中心端口号
 
 spring:
-  profiles:dev
+  profiles: dev
   application:
       name: mircoservicecloud-config-eureka-client
 
@@ -23,7 +23,7 @@ eureka:
    port: 7001 #注册中心端口号
 
 spring:
-  profiles:test
+  profiles: test
   application:
       name: mircoservicecloud-config-eureka-client
 
