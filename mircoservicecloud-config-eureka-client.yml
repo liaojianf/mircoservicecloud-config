@@ -1,15 +1,15 @@
 spring:
   profiles:
-  active:
-  - dev
- ---
- server:
-   port: 7001 #注册中心端口号
+    active:
+    - dev
+---
+  server:
+    port: 7001 #注册中心端口号
 
 spring:
   profiles: dev
   application:
-      name: mircoservicecloud-config-eureka-client
+    name: mircoservicecloud-config-eureka-client
 
 eureka:
   instance:
@@ -17,15 +17,19 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    server-url: http://eureka7001.com:7001/eureka/
+    service-url:
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址。
+      defaultZone: http://eureka7001.com:7001/eureka/
+  server:
+    enable-self-preservation: false #禁用eureka自我保护机制
 ---
- server:
-   port: 7001 #注册中心端口号
+server:
+  port: 7001 #注册中心端口号
 
 spring:
   profiles: test
   application:
-      name: mircoservicecloud-config-eureka-client
+    name: mircoservicecloud-config-eureka-client
 
 eureka:
   instance:
@@ -33,4 +37,7 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    server-url: http://eureka7001.com:7001/eureka/
+    service-url:
+       defaultZone: http://eureka7001.com:7001/eureka/
+  server:
+    enable-self-preservation: false #禁用eureka自我保护机制
