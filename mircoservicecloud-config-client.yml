@@ -3,7 +3,7 @@ spring:
     active:
     - dev
 ---
-spring:
+server:
     port: 8201
 spring:
   profiles: dev    #开发环境
@@ -12,9 +12,9 @@ spring:
 eureka:
    client:
       service-url:
-         defaultZonr: http:/eureka-dev.com:7001/eureka/
+         defaultZone: http:/eureka-dev.com:7001/eureka/
 ---
-spring:
+server:
     port: 8202
 spring:
   profiles: test    #测试环境
@@ -23,4 +23,4 @@ spring:
 eureka:
    client:
       service-url:
-         defaultZonr: http:/eureka-test.com:7001/eureka/
+         defaultZone: http:/eureka-test.com:7001/eureka/
